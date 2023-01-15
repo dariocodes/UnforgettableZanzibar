@@ -1,0 +1,163 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* header */
+header {
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px 0px 120px;
+  color: gray;
+}
+
+header img {
+  max-width: 120px;
+  width: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+li {
+  display: inline;
+  margin: 10px;
+}
+
+/* main section */
+
+.first-look {
+  background-image: url(images/aerial-view-of-zanzibar-island.jpeg);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.249);
+}
+
+.first-text {
+  margin: auto auto auto auto;
+  padding-bottom: 130px;
+  width: fit-content;
+  text-align: center;
+  color: white;
+}
+
+.first-text h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.first-text h2 {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+#book-btn {
+  margin-top: 20px;
+  height: 34px;
+  width: 120px;
+  border: none;
+  border-radius: 17px;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: rgb(58, 152, 235);
+  color: white;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+#book-btn:hover {
+  cursor: pointer;
+  background: none;
+  border: 3px solid rgb(58, 152, 235);
+  padding: 0;
+  font-size: 13px;
+}
+
+#book-btn:active {
+  cursor: pointer;
+  background-color: rgb(58, 152, 235);
+  padding: 0;
+  font-size: 13px;
+}
+
+.scrolldown-el {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+}
+.scrolldown-el button {
+  height: 50px;
+  width: 30px;
+  border: none;
+  background-color: white;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+#scroll-btn:hover {
+  padding-top: 15px;
+  width: 32px;
+}
+
+#scroll-btn:active {
+  padding-top: 15px;
+  width: 32px;
+  background: none;
+  border: 3px solid white;
+  color: white;
+}
+/* introduction */
+
+.introduction {
+  height: 350px;
+  margin-top: -60px;
+  padding-top: 100px;
+  text-align: center;
+  transition: 0.15s;
+  background-color: rgb(58, 152, 235);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.249);
+}
+
+.introduction h3 {
+  font-size: 30px;
+  color: white;
+}
+
+.introduction p {
+  max-width: 600px;
+  margin: 20px auto;
+  font-weight: 500;
+  color: white;
+}
+
+/* experiences */
+
+.experiences {
+  background-color: white;
+  height: 600px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.experiences h4 {
+  font-size: 30px;
+}
