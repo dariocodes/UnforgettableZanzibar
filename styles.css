@@ -253,6 +253,7 @@ main {
   width: 90px;
   font-size: 12px;
   transition: 0.3s;
+  margin-bottom: 20px;
 }
 
 .exp div button:hover {
@@ -263,6 +264,11 @@ main {
   font-weight: bolder;
   font-size: 13px;
   cursor: pointer;
+}
+
+.exp div button:active {
+  color: white;
+  background-color: rgb(58, 152, 235);
 }
 
 /* Footer */
@@ -320,4 +326,98 @@ footer p {
   border: 3px solid white;
   color: white;
   font-size: 25px;
+}
+
+.extra-info {
+  width: 600px;
+  margin: 30px auto 30px auto;
+}
+
+.extra-info h6 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.extra-info p {
+  font-weight: 400;
+}
+
+.extra-info button {
+  margin: 15px auto;
+  width: 80px;
+  height: 36px;
+  background-color: rgb(58, 152, 235);
+  color: white;
+  border: none;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 13px;
+  transition: 0.3s;
+}
+.extra-info button:hover {
+  background: none;
+  border: 3px solid rgb(58, 152, 235);
+  color: rgb(58, 152, 235);
+  font-size: 14px;
+}
+
+.extra-info button:active {
+  background-color: rgb(58, 152, 235);
+  color: white;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  /* header */
+  header {
+    height: 60px;
+    padding: 0px 50px 0px 5px;
+    width: 100%;
+    background-color: white;
+  }
+
+  header img {
+    max-width: 100px;
+    width: auto;
+  }
+
+  .first-look {
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 60px;
+  }
+
+  /* introduction */
+
+  .introduction {
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  section#introduction.introduction {
+    width: 100vw;
+    padding: 20px 30px 30px 30px;
+    height: 550px;
+  }
+  .introduction img {
+    display: none;
+  }
+
+  .introduction div {
+    max-width: 80vw;
+  }
+  /* experiences */
+
+  .expgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .extra-info {
+    width: 80vw;
+  }
+
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
