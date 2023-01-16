@@ -1,0 +1,155 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* header */
+header {
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.723);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px 0px 120px;
+  color: gray;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+header img {
+  max-width: 120px;
+  width: auto;
+}
+a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.15s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+nav ul {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+/* Main */
+
+main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  padding: 30px 80px;
+  align-items: center;
+  position: relative;
+}
+
+main img {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.157);
+}
+
+main h1 {
+  margin-bottom: 25px;
+}
+
+main h2 {
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+main p {
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+main li {
+  font-weight: bold;
+  list-style: circle;
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+main ul {
+  background-color: rgb(58, 152, 235);
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.157);
+}
+
+.image-div {
+  position: relative;
+}
+
+.book {
+  position: absolute;
+  height: 150px;
+  width: 300px;
+  background-color: white;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.157);
+  text-align: center;
+}
+
+.book button {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80px;
+  height: 36px;
+  background-color: rgb(58, 152, 235);
+  color: white;
+  border: none;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 13px;
+  transition: 0.3s;
+}
+.book button:hover {
+  background: none;
+  border: 3px solid rgb(58, 152, 235);
+  color: rgb(58, 152, 235);
+  font-size: 14px;
+}
+.book button:active {
+  background-color: rgb(58, 152, 235);
+  color: white;
+}
+h5 {
+  margin: 16px 16px 2px 16px;
+  font-size: 18px;
+}
+
+.book p {
+  font-size: 13px;
+  max-width: 200px;
+  margin: auto;
+}
