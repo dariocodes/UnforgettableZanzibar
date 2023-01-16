@@ -175,6 +175,10 @@ main {
   color: white;
 }
 
+.pictureismail {
+  display: none;
+}
+
 .introduction p {
   max-width: 600px;
   margin: 20px auto;
@@ -331,6 +335,10 @@ footer p {
 .extra-info {
   width: 600px;
   margin: 30px auto 30px auto;
+  background-color: rgb(58, 152, 235);
+  color: white;
+  border-radius: 15px;
+  padding: 30px;
 }
 
 .extra-info h6 {
@@ -346,8 +354,8 @@ footer p {
   margin: 15px auto;
   width: 80px;
   height: 36px;
-  background-color: rgb(58, 152, 235);
-  color: white;
+  background-color: white;
+  color: rgb(58, 152, 235);
   border: none;
   border-radius: 18px;
   font-weight: bold;
@@ -356,14 +364,14 @@ footer p {
 }
 .extra-info button:hover {
   background: none;
-  border: 3px solid rgb(58, 152, 235);
-  color: rgb(58, 152, 235);
+  border: 3px solid white;
+  color: white;
   font-size: 14px;
 }
 
 .extra-info button:active {
-  background-color: rgb(58, 152, 235);
-  color: white;
+  background-color: white;
+  color: rgb(58, 152, 235);
 }
 
 /* Media query for mobile devices */
@@ -397,9 +405,13 @@ footer p {
   section#introduction.introduction {
     width: 100vw;
     padding: 20px 30px 30px 30px;
-    height: 550px;
+    height: 750px;
   }
-  .introduction img {
+
+  .introduction h3 {
+    padding-top: 60px;
+  }
+  .mainismail {
     display: none;
   }
 
@@ -419,5 +431,12 @@ footer p {
   footer {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .pictureismail {
+    display: block;
+    height: auto;
+    width: auto;
+    object-fit: contain;
   }
 }
