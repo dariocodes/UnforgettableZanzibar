@@ -10,52 +10,147 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <header id="myHeader">
-      <img src="/website/images/logo/logo-no-background.png" alt="logo" />
+    <header id="myHeader" id="top">
+      <a href="#top"
+        ><img src="/website/images/logo/logo-no-background.png" alt="logo"
+      /></a>
+
       <nav>
         <ul>
-          <li>about us</li>
-          <li>experiences</li>
+          <li><a href="#introduction">about us</a></li>
+          <li><a href="#experiences">experiences</a></li>
           <li>contact</li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="first-look">
-        <div class="first-text">
-          <h1>Discover Zanzibar</h1>
-          <h2>Choose and book a unforgettable experience</h2>
-          <button id="book-btn">Book now</button>
-          <div class="scrolldown-el">
-            <button id="scroll-btn">
-              <span class="material-symbols-outlined"> expand_more </span>
-            </button>
+      <div class="main-content">
+        <section class="first-look">
+          <div class="first-text">
+            <h1>Discover Zanzibar</h1>
+            <h2>Choose and book a unforgettable experience</h2>
+            <button id="book-btn">Book now</button>
+            <div class="scrolldown-el">
+              <a href="#experiences"
+                ><button id="scroll-btn">
+                  <span class="material-symbols-outlined"> expand_more </span>
+                </button></a
+              >
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="introduction">
-        <img src="/website/images/ismail.jpeg" alt="Ismail" />
-        <div>
-          <h3>About us</h3>
-          <p>
-            Unforgettable Zanzibar is a premier tour company based in Zanzibar
-            and Tanzania. We specialize in providing an extensive range of
-            wildlife safari experiences and affordable package options for all
-            the best activities on the island.<br />
-            <br />
-            Our expert guides, who are all local to Zanzibar, will take you to
-            the most popular and picturesque attractions on the island, and our
-            team at our Kianga location will go above and beyond to make your
-            holiday truly unforgettable. With our in-depth knowledge of the
-            island and its culture, we guarantee a truly authentic and
-            unforgettable experience.
-          </p>
-        </div>
-      </section>
-      <section class="experiences"><h4>Experiences</h4></section>
+        </section>
+        <section class="introduction" id="introduction">
+          <img src="/website/images/ismail.jpeg" alt="Ismail" />
+          <div>
+            <h3>About us</h3>
+            <p>
+              Unforgettable Zanzibar is a premier tour company based in Zanzibar
+              and Tanzania. We specialize in providing an extensive range of
+              wildlife safari experiences and affordable package options for all
+              the best activities on the island.<br />
+              <br />
+              Our expert guides, who are all local to Zanzibar, will take you to
+              the most popular and picturesque attractions on the island, and
+              our team at our Kianga location will go above and beyond to make
+              your holiday truly unforgettable. With our in-depth knowledge of
+              the island and its culture, we guarantee a truly authentic and
+              unforgettable experience.
+            </p>
+          </div>
+        </section>
+        <section class="experiences" id="experiences">
+          <h4>Experiences</h4>
+          <div class="expgrid">
+            <div class="exp">
+              <img src="/website/images/tours/safari_blue_sq.jpeg" alt="" />
+              <div>
+                <p>Safari Blue Trip</p>
+                <button>Learn more</button>
+              </div>
+            </div>
+            <div class="exp">
+              <img src="/website/images/tours/spice_tour.jpeg" alt="" />
+              <div>
+                <p>Spice Tour</p>
+                <button>Learn more</button>
+              </div>
+            </div>
+            <div class="exp">
+              <img src="/website/images/tours/stone_town.jpeg" alt="" />
+              <div>
+                <p>Stone Town Tour</p>
+                <button>Learn more</button>
+              </div>
+            </div>
+            <div class="exp">
+              <img src="/website/images/tours/mnemba.jpeg" alt="" />
+              <div>
+                <p>Snorkel at Mnemba</p>
+                <button>Learn more</button>
+              </div>
+            </div>
+            <div class="exp">
+              <img src="/website/images/tours/prison_island.jpeg" alt="" />
+              <div>
+                <p>Prison Island</p>
+                <button>Learn more</button>
+              </div>
+            </div>
+            <div class="exp">
+              <img src="/website/images/tours/Jozani-Forest.jpeg" alt="" />
+              <div>
+                <p>Jozani Forest</p>
+                <button>Learn more</button>
+              </div>
+            </div>
+            <div class="exp">
+              <img src="/website/images/tours/cooking_class.jpeg" alt="" />
+              <div>
+                <p>Cooking Class</p>
+                <button>Learn more</button>
+              </div>
+            </div>
+            <div class="exp">
+              <img src="/website/images/tours/nakupenda.jpeg" alt="" />
+              <div>
+                <p>Nakupenda Sandbank</p>
+                <button>Learn more</button>
+              </div>
+            </div>
+            <div class="exp">
+              <img src="/website/images/tours/village_tour.webp" alt="" />
+              <div>
+                <p>Cultural/Village Tours</p>
+                <button>Learn more</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
+    <footer>
+      <p>Copyright 2023</p>
+      <a href="#top">
+        <button id="up-btn">
+          <span class="material-symbols-outlined"> expand_less </span>
+        </button></a
+      >
+
+      <div class="social-buttons">
+        <button class="social"><i class="fa fa-instagram"></i></button
+        ><button class="social"><i class="fa fa-facebook"></i></button>
+      </div>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>

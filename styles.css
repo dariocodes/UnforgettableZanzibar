@@ -28,7 +28,10 @@ header img {
   max-width: 120px;
   width: auto;
 }
-
+a {
+  text-decoration: none;
+  color: gray;
+}
 nav ul {
   list-style-type: none;
   font-weight: 500;
@@ -41,6 +44,16 @@ li {
 }
 
 /* main section */
+
+main {
+  min-height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 
 .first-look {
   background-image: url(images/backgrounds/aerial-view-of-zanzibar-island.jpeg);
@@ -160,7 +173,7 @@ li {
 .introduction p {
   max-width: 600px;
   margin: 20px auto;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
 }
 
@@ -168,11 +181,138 @@ li {
 
 .experiences {
   background-color: white;
-  height: 600px;
+  height: auto;
   text-align: center;
   margin-top: 30px;
 }
 
 .experiences h4 {
   font-size: 30px;
+}
+
+.expgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px;
+  column-gap: 20px;
+  row-gap: 50px;
+}
+
+.exp {
+  width: fit-content;
+  position: relative;
+  margin: auto;
+}
+
+.exp img {
+  width: 300px;
+  height: 300px;
+
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.exp div {
+  width: 70%;
+  margin: auto;
+  height: 100px;
+  border-radius: 30px;
+  box-shadow: 0px 5px 15px rgba(213, 64, 64, 0.126);
+  z-index: 80;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.exp div p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.exp div button {
+  width: fit-content;
+  margin: auto;
+  height: 30px;
+  padding: 7px;
+  background-color: rgb(58, 152, 235);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  width: 90px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.exp div button:hover {
+  background: none;
+  color: rgb(58, 152, 235);
+  border: 3px solid rgb(58, 152, 235);
+  padding: 0;
+  font-weight: bolder;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  background: rgb(58, 152, 235);
+  color: white;
+  height: 150px;
+  display: flex;
+  margin-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+#up-btn {
+  height: 50px;
+  width: 30px;
+  border: none;
+  background-color: white;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+#up-btn:hover {
+  padding-bottom: 15px;
+}
+
+#up-btn:active {
+  padding-bottom: 15px;
+  background: none;
+  border: 3px solid white;
+  color: white;
+}
+
+.social {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  border: none;
+  margin: 5px;
+  font-size: 20px;
+  transition: 0.3s;
+  background-color: white;
+}
+
+.social:hover {
+  background: none;
+  border: 3px solid white;
+  color: white;
+  font-size: 25px;
 }
