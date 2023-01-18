@@ -441,10 +441,11 @@ footer p {
   }
 }
 
-/* contacts page */
-.main-content {
+/*contacts page */
+.main-contact {
   height: 100vh;
 }
+
 .title {
   padding-top: 150px;
   text-align: center;
